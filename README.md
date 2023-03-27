@@ -28,7 +28,6 @@ or open settings.json and add
 
 ```
 extends: [
-    'next/core-web-vitals' // nextjs
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'standard-with-typescript',
