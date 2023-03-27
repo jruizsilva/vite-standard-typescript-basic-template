@@ -7,7 +7,7 @@ module.exports = {
   settings: { react: { version: 'detect' } },
   overrides: [
     {
-      files: ['src/*.ts', 'src/*.tsx'],
+      files: ['*.ts', 'src/*.tsx'],
       extends: [
         'plugin:react/recommended',
         'plugin:react/jsx-runtime',
