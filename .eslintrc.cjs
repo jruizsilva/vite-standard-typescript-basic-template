@@ -3,19 +3,25 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'standard-with-typescript',
-    'prettier'
-  ],
+  parser: '@typescript-eslint/parser',
   settings: { react: { version: 'detect' } },
-  overrides: [],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: 'tsconfig.json'
-  },
+  overrides: [
+    {
+      files: ['src/*.ts', 'src/*.tsx'],
+      extends: [
+        'plugin:react/recommended',
+        'plugin:react/jsx-runtime',
+        'standard-with-typescript',
+        'prettier'
+      ],
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        project: 'tsconfig.json'
+      }
+    }
+  ],
+
   plugins: ['react'],
   rules: {}
 }
