@@ -69,3 +69,8 @@ and
     "source.fixAll.eslint"
   ],
 ```
+6. Create .eslintignore and ignore this files(optional)
+```
+src/vite-env.d.ts
+vite.config.ts
+```
